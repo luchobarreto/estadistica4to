@@ -91,12 +91,12 @@
                 }
                 let newCol = document.createElement('tr');
                 newCol.innerHTML = `
-                    <td class='input-table border border-gray-400'>${COLS[i][1]}</td>
-                    <td class='input-table border border-gray-400'>${COLS[i][0]}</td>
-                    <td class='input-table border border-gray-400'>${fr}</td>
-                    <td class='input-table border border-gray-400'>${fa}</td>
-                    <td class='input-table border border-gray-400'>${FRR.toFixed(3)}</td>
-                    <td class='input-table border border-gray-400'>${((COLS[i][0] / total).toFixed(3) * 100).toFixed(2)}</td>
+                    <td class='input-table border border-gray-400 px-4 py-2'>${COLS[i][1]}</td>
+                    <td class='input-table border border-gray-400 px-4 py-2'>${COLS[i][0]}</td>
+                    <td class='input-table border border-gray-400 px-4 py-2'>${fr}</td>
+                    <td class='input-table border border-gray-400 px-4 py-2'>${fa}</td>
+                    <td class='input-table border border-gray-400 px-4 py-2'>${FRR.toFixed(3)}</td>
+                    <td class='input-table border border-gray-400 px-4 py-2'>${((COLS[i][0] / total).toFixed(3) * 100).toFixed(2)}</td>
                 `;
                 tbody.appendChild(newCol);
             }
@@ -153,7 +153,7 @@
                 </table>            
             </div>
             <div class="w-full sm:w-1/2">
-                <table class="border-collapse border-2 border-gray-500">
+                <table class="table-fixed border-collapse border-2 border-gray-500">
                     <thead>
                         <tr>
                             <th class="border border-gray-400 px-4 py-2 text-gray-800">X<sub>i</sub></th>
