@@ -116,6 +116,8 @@
             COLS.push([parseFloat(parseFloat(fa).toFixed(3)),xi])
             COLS = COLS.sort(Comparator)
             refreshTable()
+            document.getElementById('xi').value = '';
+            document.getElementById('fa').value = '';
         }
 
 
