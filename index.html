@@ -91,12 +91,12 @@
                 }
                 let newCol = document.createElement('tr');
                 newCol.innerHTML = `
-                    <td class='input-table border border-gray-400 px-4 py-2'>${COLS[i][1]}</td>
-                    <td class='input-table border border-gray-400 px-4 py-2'>${COLS[i][0]}</td>
-                    <td class='input-table border border-gray-400 px-4 py-2'>${fr}</td>
-                    <td class='input-table border border-gray-400 px-4 py-2'>${fa}</td>
-                    <td class='input-table border border-gray-400 px-4 py-2'>${FRR.toFixed(3)}</td>
-                    <td class='input-table border border-gray-400 px-4 py-2'>${((COLS[i][0] / total).toFixed(3) * 100).toFixed(2)}</td>
+                    <td class='input-table border border-gray-200 px-4 py-2'>${COLS[i][1]}</td>
+                    <td class='input-table border border-gray-200 px-4 py-2'>${COLS[i][0]}</td>
+                    <td class='input-table border border-gray-200 px-4 py-2'>${fr}</td>
+                    <td class='input-table border border-gray-200 px-4 py-2'>${fa}</td>
+                    <td class='input-table border border-gray-200 px-4 py-2'>${FRR.toFixed(3)}</td>
+                    <td class='input-table border border-gray-200 px-4 py-2'>${((COLS[i][0] / total).toFixed(3) * 100).toFixed(2)}</td>
                 `;
                 tbody.appendChild(newCol);
             }
@@ -133,8 +133,8 @@
                 <table class="border-collapse border-2 border-gray-500">
                     <thead>
                         <tr>
-                            <th class="border border-gray-400 px-4 py-2 text-gray-800">X<sub>i</sub></th>
-                            <th class="border border-gray-400 px-4 py-2 text-gray-800">f<sub>a</sub></th>
+                            <th class="border border-gray-300 px-4 py-2 text-gray-800">X<sub>i</sub></th>
+                            <th class="border border-gray-300 px-4 py-2 text-gray-800">f<sub>a</sub></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -156,12 +156,12 @@
                 <table class="table-fixed border-collapse border-2 border-gray-500">
                     <thead>
                         <tr>
-                            <th class="border border-gray-400 px-4 py-2 text-gray-800">X<sub>i</sub></th>
-                            <th class="border border-gray-400 px-4 py-2 text-gray-800">f<sub>a</sub></th>
-                            <th class="border border-gray-400 px-4 py-2 text-gray-800">f<sub>r</sub></th>
-                            <th class="border border-gray-400 px-4 py-2 text-gray-800">F<sub>a</sub></th>
-                            <th class="border border-gray-400 px-4 py-2 text-gray-800">F<sub>r</sub></th>
-                            <th class="border border-gray-400 px-4 py-2 text-gray-800">%</th>
+                            <th class="border border-gray-300 px-4 py-2 text-gray-800">X<sub>i</sub></th>
+                            <th class="border border-gray-300 px-4 py-2 text-gray-800">f<sub>a</sub></th>
+                            <th class="border border-gray-300 px-4 py-2 text-gray-800">f<sub>r</sub></th>
+                            <th class="border border-gray-300 px-4 py-2 text-gray-800">F<sub>a</sub></th>
+                            <th class="border border-gray-300 px-4 py-2 text-gray-800">F<sub>r</sub></th>
+                            <th class="border border-gray-300 px-4 py-2 text-gray-800">%</th>
                         </tr>
                     </thead>
                     <tbody id='principal-table-body'>
