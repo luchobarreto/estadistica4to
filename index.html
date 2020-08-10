@@ -87,11 +87,7 @@
                 if(i + 1 >= COLS.length){
                     FRR = 1
                 } else {
-                    if(extranose > 0){
-                        FRR = parseFloat(`0.${`${(FRR - 1 - i).toFixed(3) - extranose}`.split(".")[1]}`);
-                    } else {
                         FRR = parseFloat(`0.${`${(FRR - 1 - i).toFixed(3)}`.split(".")[1]}`)
-                    }
                 }
                 let newCol = document.createElement('tr');
                 newCol.innerHTML = `
