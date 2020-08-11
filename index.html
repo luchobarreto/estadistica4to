@@ -113,10 +113,14 @@
             let xi = document.getElementById('xi').value;
             let fa = document.getElementById('fa').value;
             fa = parseInt(fa);
-            if(xi != '' && fa != ''){
-                COLS.push([parseFloat(parseFloat(fa).toFixed(3)),xi])
-                COLS = COLS.sort(Comparator)
-                refreshTable()
+            if(xi != ''){
+                if(fa != ''){
+                    COLS.push([parseFloat(parseFloat(fa).toFixed(3)),xi])
+                    COLS = COLS.sort(Comparator)
+                    refreshTable()
+                } else {
+                    document.getElementById('input-alert').style.display = 'block'
+                }
             } else {
                 document.getElementById('input-alert').style.display = 'block'
             }
