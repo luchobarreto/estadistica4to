@@ -114,12 +114,13 @@
             let fa = document.getElementById('fa').value;
             fa = parseInt(fa);
             if(xi != ''){
-                if(fa != ''){
+                if(fa == ''){
+                    document.getElementById('input-alert').style.display = 'block'
+                } else {
+                    
                     COLS.push([parseFloat(parseFloat(fa).toFixed(3)),xi])
                     COLS = COLS.sort(Comparator)
                     refreshTable()
-                } else {
-                    document.getElementById('input-alert').style.display = 'block'
                 }
             } else {
                 document.getElementById('input-alert').style.display = 'block'
