@@ -91,7 +91,7 @@
                 }
                 let newCol = document.createElement('tr');
                 newCol.innerHTML = `
-                    <td class='input-table border border-gray-200 px-4 py-2'>${COLS[i][1]}</td>
+                    <td style="overflow: hidden;" class='input-table border border-gray-200 px-4 py-2'>${COLS[i][1]}</td>
                     <td class='input-table border border-gray-200 px-4 py-2'>${COLS[i][0]}</td>
                     <td class='input-table border border-gray-200 px-4 py-2'>${fr}</td>
                     <td class='input-table border border-gray-200 px-4 py-2'>${fa}</td>
@@ -175,8 +175,8 @@
                                     
                                 </div>
                             </td>
-                            <td>
-                                <button onClick="addCol()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Agregar</button>
+                            <td style="display: flex">
+                                <button style="margin: auto; width: 100%;" onClick="addCol()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Agregar</button>
                             </td>
                         </tr>
                     <tbody>
