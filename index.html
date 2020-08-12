@@ -92,11 +92,11 @@
                 let newCol = document.createElement('tr');
                 newCol.innerHTML = `
                     <td style="overflow: hidden;" class='input-table border border-gray-200 px-4 py-2'>${COLS[i][1]}</td>
-                    <td class='input-table border border-gray-200 px-4 py-2'>${COLS[i][0]}</td>
-                    <td class='input-table border border-gray-200 px-4 py-2'>${fr}</td>
-                    <td class='input-table border border-gray-200 px-4 py-2'>${fa}</td>
-                    <td class='input-table border border-gray-200 px-4 py-2'>${FRR.toFixed(3)}</td>
-                    <td style="text-align:center;" class='input-table border border-gray-200 px-4 py-2'>${((COLS[i][0] / total).toFixed(3) * 100).toFixed(2)}</td>
+                    <td style="overflow: hidden;" class='input-table border border-gray-200 px-4 py-2'>${COLS[i][0]}</td>
+                    <td style="overflow: hidden;" class='input-table border border-gray-200 px-4 py-2'>${fr}</td>
+                    <td style="overflow: hidden;" class='input-table border border-gray-200 px-4 py-2'>${fa}</td>
+                    <td style="overflow: hidden;" class='input-table border border-gray-200 px-4 py-2'>${FRR.toFixed(3)}</td>
+                    <td style="overflow: hidden;" style="text-align:center;" class='input-table border border-gray-200 px-4 py-2'>${((COLS[i][0] / total).toFixed(3) * 100).toFixed(2)}</td>
                 `;
                 tbody.appendChild(newCol);
             }
